@@ -1,0 +1,17 @@
+# ==========================================
+# robots.txt
+# Pretty Bridal Makeover
+# ==========================================
+
+User-agent: *
+
+# Allow all pages
+Allow: /
+
+# Block system folders (optional)
+Disallow: /css/
+Disallow: /js/
+Disallow: /assets/
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml

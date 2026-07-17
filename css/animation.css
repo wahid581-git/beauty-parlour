@@ -1,0 +1,547 @@
+/* ========================================
+   PRETTY BRIDAL MAKEOVER
+   ANIMATIONS.CSS
+======================================== */
+
+/* Smooth Scrolling */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Fade In */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn 1s ease forwards;
+
+}
+
+/* Fade Up */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+/* Fade Down */
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.fade-down{
+
+    animation:fadeDown .8s ease forwards;
+
+}
+
+/* Fade Left */
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-left{
+
+    animation:fadeLeft .8s ease forwards;
+
+}
+
+/* Fade Right */
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-right{
+
+    animation:fadeRight .8s ease forwards;
+
+}
+
+/* Zoom In */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+/* Floating Animation */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.floating{
+
+    animation:floating 3s ease-in-out infinite;
+
+}
+
+/* Pulse Button */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* Shine Effect */
+
+@keyframes shine{
+
+    from{
+
+        background-position:-200px;
+
+    }
+
+    to{
+
+        background-position:200px;
+
+    }
+
+}
+
+.shine{
+
+    background:linear-gradient(
+    120deg,
+    #ffffff 20%,
+    #d4af37 40%,
+    #ffffff 60%
+    );
+
+    background-size:300px;
+
+    animation:shine 2.5s linear infinite;
+
+}
+
+/* Rotate */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.rotate{
+
+    animation:rotate 10s linear infinite;
+
+}
+
+/* Hero Text */
+
+.hero h1{
+
+    animation:fadeDown 1s ease;
+
+}
+
+.hero p{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.hero .btn{
+
+    animation:zoomIn 1.5s ease;
+
+}
+
+/* Service Cards */
+
+.card{
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/* Gallery Images */
+
+.gallery img{
+
+    transition:.5s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* Buttons */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* Navigation */
+
+.nav{
+
+    transition:.4s;
+
+}
+
+/* Logo */
+
+.logo img{
+
+    transition:.4s;
+
+}
+
+.logo img:hover{
+
+    transform:rotate(-5deg) scale(1.05);
+
+}
+
+/* Social Icons */
+
+.social-icons a{
+
+    transition:.4s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* Contact Form */
+
+input,
+
+textarea,
+
+select{
+
+    transition:.3s;
+
+}
+
+input:focus,
+
+textarea:focus,
+
+select:focus{
+
+    transform:scale(1.02);
+
+}
+
+/* Footer */
+
+footer{
+
+    animation:fadeUp 1s;
+
+}
+
+/* Scroll Animation */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Loader */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.loader{
+
+    width:50px;
+
+    height:50px;
+
+    border:5px solid #ddd;
+
+    border-top:5px solid #d4af37;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+/* Image Hover */
+
+.image-hover{
+
+    overflow:hidden;
+
+}
+
+.image-hover img{
+
+    transition:.5s;
+
+}
+
+.image-hover:hover img{
+
+    transform:scale(1.1);
+
+}
+
+/* Glass Cards */
+
+.glass{
+
+    transition:.4s;
+
+}
+
+.glass:hover{
+
+    transform:translateY(-8px);
+
+    backdrop-filter:blur(20px);
+
+}
+
+/* Counter */
+
+.counter{
+
+    animation:fadeUp 1s;
+
+}
+
+/* Testimonial */
+
+.testimonial{
+
+    transition:.4s;
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* FAQ */
+
+.faq-item{
+
+    transition:.4s;
+
+}
+
+.faq-item:hover{
+
+    transform:translateX(10px);
+
+}
